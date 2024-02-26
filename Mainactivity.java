@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         MarkerOptions mOption = new MarkerOptions(); 
                         mOption.position(new LatLng(lati, longi)); 
                         mOption.icon(BitmapDescriptorFactory.fromResource(R.drawable.car)); 
-                        mOption.title("Simha-9000666090"); 
+                        mOption.title("madhu-7780312615");               // titles
                         
                         // Add marker to the map
                         googleMap.addMarker(mOption); 
