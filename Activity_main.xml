@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Map Fragment Section -->
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" <!-- Takes remaining vertical space after other views -->
+        android:layout_weight="0.9" /> <!-- Weight to occupy 90% of the available space -->
+
+    <!-- Horizontal LinearLayout for Latitude and Longitude TextViews -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" <!-- Takes remaining vertical space -->
+        android:layout_weight="0.1" <!-- Weight to occupy 10% of the available space -->
+        android:orientation="horizontal"> <!-- Horizontal orientation -->
+
+        <!-- Latitude TextView -->
+        <TextView
+            android:id="@+id/tv_latitude"
+            android:layout_width="0dp" <!-- Takes remaining horizontal space after other views -->
+            android:layout_height="match_parent" <!-- Match parent height -->
+            android:layout_weight="0.5" <!-- Weight to occupy 50% of the available space -->
+            android:text="Latitude" <!-- Text content -->
+            android:gravity="center" /> <!-- Center aligns text horizontally -->
+
+        <!-- Longitude TextView -->
+        <TextView
+            android:id="@+id/tv_longitude"
+            android:layout_width="0dp" <!-- Takes remaining horizontal space after other views -->
+            android:layout_height="match_parent" <!-- Match parent height -->
+            android:layout_weight="0.5" <!-- Weight to occupy 50% of the available space -->
+            android:text="Longitude" <!-- Text content -->
+            android:gravity="center" /> <!-- Center aligns text horizontally -->
+    </LinearLayout>
+</LinearLayout>
